@@ -1,0 +1,189 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("/assets/images/abstract_flowers.png");
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(218, 218, 218);
+    background-blend-mode: multiply;
+}
+
+.main-container {
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.main-title {
+    font-family: 'Geist Light', sans-serif;
+    font-size: 186px;
+    color: white;
+    margin-bottom: .5rem;
+    font-weight: 300;
+    letter-spacing: -0.05em;
+}
+
+.subtitle {
+    font-family: 'Geist Regular', sans-serif;
+    font-size: 32px;
+    color: white;
+    opacity: 0.7;
+    font-weight: 300;
+}
+
+/* Card Container */
+.card-container {
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 48rem;
+}
+
+.card-content {
+    background-color: #1F1F1F;
+    padding: 2rem;
+    border-radius: 24px;
+    box-shadow: 0 48px 24px -24px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-text {
+    padding-right: 2rem;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-text h3 {
+    font-family: 'Geist Regular', sans-serif;
+    font-size: 24px;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.card-text p {
+    font-family: 'Geist Regular', sans-serif;
+    font-size: 16px;
+    margin-bottom: 2rem;
+    opacity: 0.6;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.action-button {
+    padding: 20px 32px;
+    background-color: #A12C35;
+    color: rgb(255, 255, 255);
+    border: solid 1px #6F0F17;
+    border-radius: 8px;
+    font-family: 'Geist Regular', sans-serif;
+    font-size: 16px;
+    box-shadow: inset 0px 6px 6px rgba(255, 255, 255, 0.2),
+                inset 0px -6px 6px rgba(0, 0, 0, 0.2),
+                0 8px 24px rgba(0, 0, 0, 0.5),
+                0 8px 24px rgba(350, 36, 51, 0.5);                
+    transition: transform 0.3s ease;
+}
+
+.action-button:hover {
+    transform: translateY(-2px);
+    background-color: #a2313a;
+    box-shadow: inset 0px 6px 6px rgba(255, 255, 255, 0.2),
+                inset 0px -6px 6px rgba(0, 0, 0, 0.2),
+                0 8px 24px rgba(0, 0, 0, 0.8),
+                0 8px 24px rgba(350, 36, 51, 0.5);  
+}
+
+
+
+.card-image img {
+    max-width: 195px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.8);
+
+}
+
+/* Info Section */
+.info-section {
+    margin: 2rem auto;
+    max-width: 48rem;
+}
+
+.info-section h4 {
+    font-family: 'Geist Regular', sans-serif;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.info-section p {
+    font-family: 'Geist Mono', monospace;
+    font-size: 16px;
+    color: white;
+    opacity: 0.6;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .main-title {
+        font-size: 120px;
+    }
+
+    .card-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-text {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .card-image img {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 90px;
+    }
+
+    .subtitle {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 60px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .card-image img {
+        max-width: 150px;
+    }
+}
